@@ -1,0 +1,45 @@
+body
+{
+
+    background-size: cover;
+    background: url("../img/banc.png") no-repeat;
+
+}
+.title
+{
+    text-align: center;
+    font-family: "Tahoma", sans-serif;
+    font-weight:bold;
+    color: white;
+}
+.main-block
+{
+    font-family: Roman, sans-serif;
+
+    text-align: center;
+    color: white;
+}
+.left
+{
+    font-family: Roman, sans-serif;
+    margin-right: 750px;
+    margin-top: 50px;
+    color: darkslateblue;
+}
+.right
+{
+
+    font-family: Roman, sans-serif;
+    margin-left: 750px;
+    margin-top: -85px;
+    color: darkslateblue;
+}
+.CurrentBalance
+{
+    margin-top: 1px;
+}
+.Profile-Image
+{
+    text-align: end;
+    margin-right: 50px;
+}

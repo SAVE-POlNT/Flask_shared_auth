@@ -1,0 +1,48 @@
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer {
+    width: 200px;
+    height: 300px;
+    border-radius: 20;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.cardContainer:hover .card {
+    transform: rotateY(180deg);
+    backface-visibility: visible;
+}
+
+.card figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+}
+
+.card .front {
+    color: rgb(29, 27, 27);
+    background-color: rgb(93, 50, 161);
+}
+
+.card .back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    color: rgb(29, 27, 27);
+    background-color: rgb(58, 179, 138);
+}

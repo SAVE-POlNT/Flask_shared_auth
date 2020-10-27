@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple registration form</title>
+    <link rel="stylesheet" href="../static/css/register.css">
+</head>
+
+<body>
+    <div class="main-block">
+        <h1>Sign in now !</h1>
+        <form method="POST" action="/token">
+            <hr>
+            <div class="account-infos">
+                <input type="text" name="email" id="name" placeholder="email" required />
+                <input type="password" name="passw" id="name" placeholder="Password" required />
+            </div>
+
+            <hr>
+
+            <div class="btn-block">
+                <button type="submit">Connect </button>
+                <div class="sign-in"><a href="/">Sign up</a></div>
+            </div>
+        </form>
+        <div style="color:red;text-align:center">{{wrongpassword}}</div>
+
+
+    </div>
+</body>
+
+</html>

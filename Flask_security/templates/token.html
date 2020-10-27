@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple registration form</title>
+    <link rel="stylesheet" href="../static/css/register.css">
+</head>
+
+<body>
+    <div class="main-block">
+        <h3>Write your token here </h3>
+        <form method="POST" action="/account">
+            <hr>
+            <div class="account-infos">
+                <input type="text" name="token" id="name" placeholder="Your Token" required />
+
+            </div>
+
+            <hr>
+
+            <div class="btn-block">
+                <button type="submit" onClick="redirect()">Verify</button>
+
+            </div>
+        </form>
+        <form action="/resend">
+            <h2>No token recived ?</h2>
+            <button type="submit" onClick="redirect()"> Resend </button>
+        </form>
+        <div style="color:red;text-align:center">{{error}}</div>
+
+    </div>
+</body>
+
+</html>

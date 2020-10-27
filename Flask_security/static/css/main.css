@@ -1,0 +1,116 @@
+* {
+    color: #154563;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    position: fixed;
+    background-image: url("../img/bgb.jpg");
+    width: 100%;
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+.infos {
+    -webkit-filter: blur(0px);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 20%;
+    padding-top: 13%;
+    width: 70%;
+}
+
+.det-infos {
+    border-radius: 7px;
+    background: #ebebeb;
+    height: 200px;
+    width: 200px;
+    margin: 3%;
+    text-align: center;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #154563;
+}
+
+
+.disconnect-b {
+    top: 2%;
+    border-radius: 7px;
+    opacity: .8;
+    right: 3%;
+    position: fixed;
+    height: 50px;
+    text-align: right;
+    background: #ebebeb;
+}
+
+.disconnect-b a {
+    padding-top: 0;
+    padding-bottom: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #154563;
+}
+
+hr {
+    opacity: .6;
+    border-color: gray;
+    border-width: 3px;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.hover-to-display {
+    height: 180px;
+    width: 200px;
+    opacity: 0;
+}
+
+.front:hover .hover-to-display {
+    animation-name: disp;
+    animation-duration: 2s;
+    opacity: 1;
+    background-image: url("../img/unknown.jpg");
+    background-size: cover;
+    border-radius: 7px;
+
+}
+
+@-webkit-keyframes disp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes disp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

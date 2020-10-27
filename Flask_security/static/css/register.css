@@ -1,0 +1,173 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: #154563;
+}
+
+.main-block h1 {
+    color: #154563;
+
+}
+
+
+body,
+div,
+h1,
+form,
+input,
+p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(28, 28, 37);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+}
+
+p {
+    font-size: 12px;
+}
+
+hr {
+    color: #a9a9a9;
+    opacity: 0.3;
+}
+
+.main-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    background: #ebebeb;
+    opacity: 0.8;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+form {
+    margin: 0 30px;
+}
+
+.account-infos {
+    height: 50%;
+}
+
+.account-infos,
+.gender {
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label.radio {
+    position: relative;
+    display: inline-block;
+    padding-top: 4px;
+    margin-right: 20px;
+    text-indent: 30px;
+    overflow: visible;
+    cursor: pointer;
+}
+
+label.radio:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #154563;
+    border-radius: 50%;
+}
+
+label.radio:after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    top: 8px;
+    left: 4px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+input[type=radio]:checked+label:after {
+    opacity: 1;
+}
+
+input[type=text],
+input[type=password] {
+    width: calc(100% - 57px);
+    height: 36px;
+    margin: 13px 0 0 -5px;
+    padding-left: 10px;
+    border: solid 1px #cbc9c9;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    background: #fff;
+}
+
+input[type=password] {
+    margin-bottom: 15px;
+}
+
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    margin-bottom: 1%;
+    border: none;
+    background-color: #154563;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sign-in {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    margin-bottom: 1%;
+    border: none;
+    background-color: #154563;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sign-in a {
+    text-decoration: none;
+}
+
+.sign-in a:visited {
+    color: #fff;
+}
+
+.sign-in a:focus {
+    color: #fff;
+}

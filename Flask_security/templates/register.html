@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple registration form</title>
+    <link rel="stylesheet" href="../static/css/register.css">
+</head>
+
+<body>
+    <div class="main-block">
+        <h1>Registration</h1>
+        <form method="POST" action="/">
+
+            <hr>
+
+            <div class="account-infos">
+                <input type="text" name="email" id="name" placeholder="Email" required />
+                <input type="text" name="name" id="name" placeholder="Name" required />
+                <input type="text" name="prénom" id="prénom" placeholder=" Last Name" required />
+                <input type="password" name="passw" id="name" placeholder="Password" required />
+            </div>
+            <hr>
+            <div class="btn-block">
+                <button type="submit"> Register </button>
+                <div class="sign-in"><a href="signin">Sign in</a></div>
+            </div>
+        </form>
+        <div style="color:red;text-align:center"> {{error}}</div>
+
+
+    </div>
+</body>
+
+</html>
